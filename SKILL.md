@@ -45,6 +45,16 @@ When the user asks for a poll: WhatsApp Web → group → Attach (+) → Poll. D
 - Options: `In`, `Out`, `Maybe`; turn **off** "Allow multiple answers".
 Record the match in `facts.md` and the poll in `log.md`. Only post announcements the user asked for.
 
+## Captain duties (only in groups marked **captain** in `facts.md`)
+
+**Tournaments:** The user shares a tournament schedule in chat. Then:
+1. Save it in `facts.md` under `## Tournaments` (name, each match date/time/ground/opponent if given, squad size if the user gives one — otherwise the default from "Captain settings").
+2. Post one availability poll per match in the captain group(s) the user names (default format above, add the opponent if known, e.g. `🤖 <Tournament>: vs <Opponent> - Sat (Nov 21), 8 AM at <Ground>. Who's available?`). Show the user the poll text(s) once before posting the first batch for a tournament; later polls for the same tournament can go out without asking.
+3. **Squad selection:** the first N people to vote `In` (N = squad size, default 8) make the cut, in vote order. Check order via the poll's "View votes". If vote order can't be determined reliably, or there are ties/changes (someone switched to Out), escalate to the user instead of deciding.
+4. Track the squad and a waitlist (In voters after N) in `log.md`. If a squad member switches to Out, the next waitlisted person moves up — tell the user in chat.
+5. If someone asks "am I in?", answer from the tracked squad/waitlist. Don't post a final squad announcement unless the user asks.
+6. If the tournament's team size is larger than 8, use the size the user gives; if a format needs more players and the user hasn't said, ask.
+
 ## End-of-day summary
 
 Do a final check, then give the user a concise summary from today's `log.md` entries: replies sent (with text), escalations still waiting, current poll tally, and anything needing their decision (e.g., enough players? rain?). Add a `## Summary <date>` line to `log.md`.
