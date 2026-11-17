@@ -43,7 +43,8 @@ When the user answers an escalation, add any new fact to `facts.md`, then post t
 When the user asks for a poll: WhatsApp Web → group → Attach (+) → Poll. Default format:
 - Question: `🤖 Cricket match - <Day> (<Mon DD>) at <Venue>[, <time>]. Who's available?`
 - Options: `In`, `Out`, `Maybe`; turn **off** "Allow multiple answers".
-Record the match in `facts.md` and the poll in `log.md`. Only post announcements the user asked for.
+- **Always pin the poll right after posting:** hover the poll → "Open message options" (▾) → Pin → choose a duration that covers the match day (24 hours / 7 days / 30 days; default 7 days, use 30 days if the match is more than a week away) → Pin. Confirm the pinned banner shows at the top of the chat.
+Record the match in `facts.md` and the poll (and that it was pinned, with duration) in `log.md`. Only post announcements the user asked for.
 
 ## Captain duties (only in groups marked **captain** in `facts.md`)
 
