@@ -72,7 +72,7 @@ On Windows (PowerShell), `~` works the same way, and you can use `copy` instead 
 
 Open `~/.claude/skills/cricket/facts.md` and set:
 
-- **Owner name** — used in the `🤖 <Name>'s assistant:` label
+- **Owner name** — so the assistant knows who "I" is when it writes in your voice
 - **Groups to watch** — the *exact* WhatsApp group names, and mark the ones where you're **captain**
 - **Squad size** — defaults to 8
 - Any upcoming match details you already know (date, ground, start time, booking status)
