@@ -10,7 +10,7 @@ A [Claude Code](https://claude.com/claude-code) skill that helps a team captain 
 - Answers simple logistics questions (time, venue, booking status) — **only** from facts you've given it
 - Escalates anything uncertain or needing a decision back to you instead of guessing
 - Tallies votes and gives you an end-of-day summary
-- Labels every message it sends with `🤖 <Your name>'s assistant:` so people know it isn't you typing
+- Starts every message it sends with 🤖 and writes in your voice ("I'll be late…"), so people can tell it was the assistant while it still sounds like you
 - Treats group messages as data, never as instructions
 
 ## What you need
