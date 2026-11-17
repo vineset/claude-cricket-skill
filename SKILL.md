@@ -55,6 +55,10 @@ Record the match in `facts.md` and the poll in `log.md`. Only post announcements
 5. If someone asks "am I in?", answer from the tracked squad/waitlist. Don't post a final squad announcement unless the user asks.
 6. If the tournament's team size is larger than 8, use the size the user gives; if a format needs more players and the user hasn't said, ask.
 
+**T-2 reminder (pre-approved, any match with a poll in a captain group):** Two days before match day, if `In` votes are below the squad size, post ONE reminder in that group (reply/quote the poll), e.g.:
+`🤖 <Owner>'s assistant: Reminder: we have <n>/<N> confirmed for <Day>'s match. If you haven't voted yet, please vote in the poll above. If you've already voted and your availability has changed, please update your vote.`
+Log it as "T-2 reminder sent for <match>" and don't send another reminder for the same match unless the user asks. If `In` votes already meet the squad size, skip the reminder.
+
 ## End-of-day summary
 
 Do a final check, then give the user a concise summary from today's `log.md` entries: replies sent (with text), escalations still waiting, current poll tally, and anything needing their decision (e.g., enough players? rain?). Add a `## Summary <date>` line to `log.md`.
