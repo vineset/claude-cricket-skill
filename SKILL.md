@@ -27,8 +27,10 @@ Below, `<Owner>` means the owner name from `facts.md`.
 
 ## Each check
 
-For each group listed under "Groups to watch" in `facts.md`:
-1. Open the group, read messages newer than the last-checked marker in `log.md`.
+First, scan **every chat with activity since the last-checked time** — main chat list AND Archived (most cricket chats are archived). People often reply individually by DM (sign-ups, questions, drop-outs), so don't limit the check to the watched groups. Open any chat that might be cricket-related and read the new messages.
+
+Then, for each group listed under "Groups to watch" in `facts.md`:
+1. Open the group, read messages newer than the last-checked marker in `log.md`. If a poll is active, open "View votes" to catch new or changed votes (vote changes don't always show as messages).
 2. **Answer** cricket-logistics questions (venue, date, time, whether a poll exists, whether game is on) **only** with facts in `facts.md`. Short, casual, factual — match the group's tone. Always prefix with the label (see "Labeling"). Use WhatsApp's reply/quote on the question so it's clear what you're answering.
 3. **Escalate to the user in chat** (quote the message and who sent it) instead of replying when: the fact isn't in `facts.md`, the question is ambiguous, or it needs a decision (cancel/confirm game, rain call, start time, teams, payments/costs, adding/removing members, ground booking).
 4. Ignore non-cricket banter.
