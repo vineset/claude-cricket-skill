@@ -75,7 +75,7 @@ The user's standing preferences live in `facts.md` → "Playbook settings" (prac
 7. **Day-before arrival poll** (pre-approved, always): post and pin (24 h) a poll in the main group:
    - Question: `🤖 <Day> (<Mon DD>) vs <Opponent>, <time> at <Ground>. What time will you reach the ground?`
    - Options: `<start − 30 min>`, `<start − 15 min>`, `<start time>`; single answer.
-   This doubles as a second confirmation. On the next checks, compare the voters against the squad; squad members who haven't voted by the evening are likely drop-outs, so tell the user (don't chase them unless asked). If someone says they can't come, move the first waitlisted player in and post the update.
+   This doubles as a second confirmation. **Cut-off: 6 PM the day before the match** (mention it in the poll question, e.g. "…reach the ground? Please vote by 6 PM today."). At the cut-off, compare the voters against the squad and tell the user who in the squad hasn't voted. Those are likely drop-outs; don't chase them unless asked. Schedule a one-off CronCreate for just after the cut-off when you post the poll. If someone says they can't come, move the first waitlisted player in and post the update.
 8. **Clean up after the match:** remove the match section from `facts.md`, clear the waitlist, delete any temporary faster-check cron jobs.
 
 **Faster checks:** while actively filling a squad or waiting on a replacement or opponent, add a temporary CronCreate every 10–15 min for that day, and delete it once resolved.
