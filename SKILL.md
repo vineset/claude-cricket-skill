@@ -84,7 +84,7 @@ The user's standing preferences live in `facts.md` → "Playbook settings" (prac
 
 ## Formatting team lists
 
-When posting a squad or team list, put **each name on its own line** (numbered), not comma-separated on one line. In WhatsApp Web, a new line inside a message is **Shift+Enter** (plain Enter sends the message) — type the intro, press Shift+Enter, then each name followed by Shift+Enter, then the closing line, and only press Enter at the very end.
+When posting a squad or team list, put **each name on its own line** (numbered), not comma-separated on one line. In WhatsApp Web, a new line inside a message is **Shift+Enter** (plain Enter sends the message) — type the intro, press Shift+Enter, then each name followed by Shift+Enter, then the closing line, and only press Enter at the very end. **Watch out:** typing `1. ` at the start of a line turns on WhatsApp's auto-numbered list, so after Shift+Enter the next number is added for you. Typing the numbers yourself as well gives "2. 2. …". Zoom in on the draft before sending; if it's garbled, clear it (Ctrl+A, Delete) and type only the first number, or write it as one paragraph.
 
 ## End-of-day summary
 
