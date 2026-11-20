@@ -62,6 +62,26 @@ Record the match in `facts.md` and the poll (and that it was pinned, with durati
 `🤖 Reminder: we have <n>/<N> confirmed for <Day>'s match. If you haven't voted yet, please vote in the poll above. If you've already voted and your availability has changed, please update your vote.`
 Log it as "T-2 reminder sent for <match>" and don't send another reminder for the same match unless the user asks. If `In` votes already meet the squad size, skip the reminder.
 
+## Weekly practice-match playbook (captain groups)
+
+The user's standing preferences live in `facts.md` → "Playbook settings" (practice group name, opponent-finder group, announcements channel, squad size, the main group's invite link, grounds and how to check them, teams to avoid). Steps, roughly in order through the week:
+
+1. **Availability poll** in the main practice group for the match day (format above, pin it).
+2. **Find an opponent** (only when the user asks for an opponent match): post in the opponent-finder group, e.g. `🤖 Hi everyone, we're looking for a practice match this <Day> (<Mon DD>) morning. Any team interested? Please let me know.` If the user has said "whoever is ready, confirm them", confirm the first team that offers, **except** teams on the user's avoid list (escalate those). Tell the opponent how many players we'll have and the time; never invent a ground.
+3. **Fill the squad.** Target = squad size + 1 spare (user prefers one extra so a drop-out still leaves enough). When asked, post the gap in the community announcements channel (only if the user asks; members can't reply there, so point them to the main group or a DM). Sign-ups come from: new In votes on the poll **and** individual DMs or group messages, so scan every chat. For each sign-up: confirm in first person; if they aren't in the main group, include its invite link. After full, waitlist (still share the link). On **every** addition or drop-out, post the updated squad in the main group (one name per line, "X spots left") to nudge others.
+4. **Ground.** Never claim a booking we don't have. If none is booked, ask the opponent; check the public field schedule the user points to; confirm with the opponent; then announce in the main group. Respect the user's hard stops (e.g. they must leave by a set time), so don't agree to later start times that break them.
+5. **Final team.** When full, post the final team (numbered, one per line) with time and ground, plus the waitlist.
+6. **T-2 reminder** (above) only if still short.
+7. **Day-before arrival poll** (pre-approved, always): post and pin (24 h) a poll in the main group:
+   - Question: `🤖 <Day> (<Mon DD>) vs <Opponent>, <time> at <Ground>. What time will you reach the ground?`
+   - Options: `<start − 30 min>`, `<start − 15 min>`, `<start time>`; single answer.
+   This doubles as a second confirmation. On the next checks, compare the voters against the squad; squad members who haven't voted by the evening are likely drop-outs, so tell the user (don't chase them unless asked). If someone says they can't come, move the first waitlisted player in and post the update.
+8. **Clean up after the match:** remove the match section from `facts.md`, clear the waitlist, delete any temporary faster-check cron jobs.
+
+**Faster checks:** while actively filling a squad or waiting on a replacement or opponent, add a temporary CronCreate every 10–15 min for that day, and delete it once resolved.
+
+**Housekeeping:** keep cricket chats archived (archive any new cricket chat that lands in the main list). When the Archived list is scrolled, scroll it back to the top before scanning. If the WhatsApp tab freezes or the list looks unchanged for a long time, reload it.
+
 ## Formatting team lists
 
 When posting a squad or team list, put **each name on its own line** (numbered), not comma-separated on one line. In WhatsApp Web, a new line inside a message is **Shift+Enter** (plain Enter sends the message) — type the intro, press Shift+Enter, then each name followed by Shift+Enter, then the closing line, and only press Enter at the very end.
