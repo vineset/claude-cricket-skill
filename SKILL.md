@@ -62,6 +62,10 @@ Record the match in `facts.md` and the poll (and that it was pinned, with durati
 `🤖 Reminder: we have <n>/<N> confirmed for <Day>'s match. If you haven't voted yet, please vote in the poll above. If you've already voted and your availability has changed, please update your vote.`
 Log it as "T-2 reminder sent for <match>" and don't send another reminder for the same match unless the user asks. If `In` votes already meet the squad size, skip the reminder.
 
+## Formatting team lists
+
+When posting a squad or team list, put **each name on its own line** (numbered), not comma-separated on one line. In WhatsApp Web, a new line inside a message is **Shift+Enter** (plain Enter sends the message) — type the intro, press Shift+Enter, then each name followed by Shift+Enter, then the closing line, and only press Enter at the very end.
+
 ## End-of-day summary
 
 Do a final check, then give the user a concise summary from today's `log.md` entries: replies sent (with text), escalations still waiting, current poll tally, and anything needing their decision (e.g., enough players? rain?). Add a `## Summary <date>` line to `log.md`.
