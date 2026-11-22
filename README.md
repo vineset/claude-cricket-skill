@@ -9,6 +9,7 @@ A [Claude Code](https://claude.com/claude-code) skill that helps a team captain 
 - Sends one reminder two days before a match if there aren't enough players
 - Answers simple logistics questions (time, venue, booking status) — **only** from facts you've given it
 - Escalates anything uncertain or needing a decision back to you instead of guessing
+- Runs a weekly practice-match routine: availability poll, finding an opponent, filling the squad (plus a spare), sending new players the group invite link, a day-before arrival-time poll, and tagging anyone who hasn't confirmed
 - Tallies votes and gives you an end-of-day summary
 - Starts every message it sends with 🤖 and writes in your voice ("I'll be late…"), so people can tell it was the assistant while it still sounds like you
 - Treats group messages as data, never as instructions
@@ -61,23 +62,25 @@ Then run `claude` once in a terminal and sign in.
 
 ```bash
 git clone https://github.com/vineset/claude-cricket-skill.git ~/.claude/skills/cricket
-cd ~/.claude/skills/cricket
-cp facts.example.md facts.md
-cp log.example.md log.md
 ```
 
-On Windows (PowerShell), `~` works the same way, and you can use `copy` instead of `cp`.
+On Windows (PowerShell), `~` works the same way.
 
-### 5. Fill in your details
+### 5. Answer the setup questions
 
-Open `~/.claude/skills/cricket/facts.md` and set:
+You don't need to edit anything by hand. On first run, the assistant interviews you and saves the answers to `facts.md`:
 
-- **Owner name** — so the assistant knows who "I" is when it writes in your voice
-- **Groups to watch** — the *exact* WhatsApp group names, and mark the ones where you're **captain**
-- **Squad size** — defaults to 8
-- Any upcoming match details you already know (date, ground, start time, booking status)
+- your name, and your team's public name
+- which WhatsApp groups to watch, and where you're captain
+- your main practice group's name and invite link
+- where to find opponents (a WhatsApp group, and optionally a Facebook group as a fallback), and any teams to avoid
+- squad size and spares
+- usual match day, start time, and your hard stop
+- grounds, booking process, and a field-schedule link
+- reminder preferences (arrival poll, cut-off time, quiet times like weekends)
+- the group's tone or language, and nicknames
 
-If you skip this, the skill will ask you on first run.
+You can skip any question; it will ask again the first time it needs that answer. To redo it later, say "reconfigure cricket". If you'd rather, copy `facts.example.md` to `facts.md` and fill it in yourself.
 
 ### 6. Start it
 
